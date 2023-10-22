@@ -1,0 +1,4 @@
+backend/app/node_modules/
+backend/app/dist/
+
+frontend/node_modules/
