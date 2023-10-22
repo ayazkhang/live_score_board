@@ -1,7 +1,6 @@
 #!/bin/bash
 
-if [ "$NODE_ENV" == "production" ] ; then
-  npm run start
-else
-  npm run dev
-fi
+npm run build
+npx knex migrate:latest --env development
+npx knex seed:run --env development
+npm start
